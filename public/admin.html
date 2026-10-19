@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Área da organização</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .admin-shell { max-width: 760px; margin: 0 auto; padding: 24px; border: 1px solid #d8ced9; background: rgba(255,255,255,.85); }
+    .admin-shell h1 { font-size: clamp(34px, 8vw, 56px); line-height: 1; letter-spacing: -.06em; margin: 24px 0; }
+    .admin-shell h1 span { color: var(--pink-dark); }
+    .admin-shell .login-form { max-width: 420px; }
+    .admin-actions { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin: 18px 0; }
+    .admin-actions button { padding: 10px 14px; background: var(--ink); color: white; border: 0; cursor: pointer; font: 11px 'DM Mono', monospace; }
+    .guest-list { display: grid; gap: 10px; }
+    .guest { border: 1px solid var(--line); padding: 14px; background: #fff; }
+    .guest strong { display: block; margin-bottom: 6px; }
+    .guest p { font-size: 13px; color: #766e7b; margin: 5px 0 0; }
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <main class="admin-shell">
+    <div class="topline"><span>ÁREA RESTRITA</span><a href="/" style="color:inherit">↖ VOLTAR AO CONVITE</a></div>
+    <h1>Guest <span>list</span><sup>™</sup></h1>
+    <section id="login-section">
+      <p class="muted">Entre com a senha administrativa para ver as confirmações. Esta lista não é pública.</p>
+      <form class="login-form" id="login-form">
+        <label for="password">SENHA DE ADMINISTRADORA</label>
+        <input type="password" id="password" autocomplete="current-password" required>
+        <button class="submit-button" style="margin-top:14px" type="submit">ENTRAR ↗</button>
+        <p id="login-message" class="form-message" role="status"></p>
+      </form>
+    </section>
+    <section id="guests-section" class="hidden">
+      <div class="admin-actions"><strong id="total">0 confirmações</strong><button id="logout-button">SAIR</button></div>
+      <div id="guest-list" class="guest-list"></div>
+    </section>
+  </main>
+  <script src="/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f5f7">
+  <title>Você está convidado ✦</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="invite-shell">
+    <div class="topline"><span>★ SAVE THE DATE ★</span><span>EST. 2000</span></div>
+    <div class="sparkle" aria-hidden="true">✳</div>
+    <p class="eyebrow">VOCÊ ESTÁ NA LISTA</p>
+    <h1>Birthday<br><span>Party</span><sup>™</sup></h1>
+    <div class="chrome-line"><span>✦</span><span>UMA NOITE PRA LEMBRAR</span><span>✦</span></div>
+
+    <section class="event-details" aria-label="Detalhes da festa">
+      <p class="event-name">ANIVERSÁRIO DA <strong>PATTY</strong></p>
+      <div class="detail-grid">
+        <div><small>DATA</small><strong> 14 DE NOVEMBRO</strong></div>
+        <div><small>HORÁRIO</small><strong>A PARTIR DAS 20:30</strong></div>
+        <div class="location"><small>LOCAL</small><strong>RUA COPACABANA- CIDADE DE DEUS( CENTRO DE LAZER CAMPO DE FUTEBOL, POR TRÁS DO SHOPPING PHELIPPE DAOU ) </strong></div>
+      </div>
+    </section>
+
+    <section class="rsvp-card" id="confirmar">
+      <div class="section-heading"><span>01 / RSVP</span><span>✧</span></div>
+      <h2>Vai ficar de fora?</h2>
+      <p class="muted">Confirme sua presença e coloque o nome de quem vai com você.</p>
+      <form id="rsvp-form">
+        <label for="name">SEU NOME</label>
+        <input id="name" name="name" maxlength="80" placeholder="Nome e sobrenome" required>
+        <label>ACOMPANHANTES <span class="optional">(SE HOUVER)</span></label>
+        <div id="companions-list" class="companions-list"></div>
+        <button type="button" class="add-button" id="add-companion">+ adicionar acompanhante</button>
+        <p class="drink-note"><span>✦</span> FIQUE Á VONTADE PARA LEVAR SUA PRÓPRIA BEBIDA ALCOÓLICA!!!!!♡</p>
+        <button class="submit-button" type="submit">CONFIRMAR PRESENÇA, FIQUE Á VONTADE COM UM LOOK A CARÁTER! ↗</button>
+        <p id="form-message" class="form-message" role="status"></p>
+      </form>
+    </section>
+    <footer><span> ♡</span><span>A GENTE SE VÊ LA!</span></footer>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
